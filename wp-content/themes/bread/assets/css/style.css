@@ -1,0 +1,49 @@
+/*MAIN STYLE SHEET (comment can be removed)*/
+
+
+footer {
+    position:absolute;
+    bottom:0;
+}
+
+p {
+    font-size: 1.5rem;
+    color: blue;
+}
+
+a {
+    color: black;
+    font-size: 1.4rem;
+}
+
+a:hover {
+    color: blue;
+}
+
+div.home {
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 5rem;
+}
+
+body, * {
+    margin: 0;
+    padding: 0;
+}
+
+div.fortnite {
+    background-color: rgb(214, 214, 214);
+    text-align: center;
+}
+
+.fortnite h1 {
+    color: orange;
+    font-size: 5rem;
+}
+
+.assetto {
+    background-color: black;
+    color: white;
+}
