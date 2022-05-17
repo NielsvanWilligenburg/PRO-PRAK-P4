@@ -9,9 +9,10 @@
         <h1><?php echo $title; ?></h1>
     <?php endif; ?>
 
-    <?php if($content): ?>
-        <?php echo $content; ?>
-        <?php echo do_shortcode('[arandomnumber]'); ?>
-    <?php endif; ?>
+    
+     <?php //if($content): ?>
+        <?php //echo $content; ?>
+        <?php //echo do_shortcode('[arandomnumber]'); ?>
+    <?php render(); //endif; ?>
 
 </div>

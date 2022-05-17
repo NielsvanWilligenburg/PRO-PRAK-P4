@@ -1,49 +1,82 @@
-/*MAIN STYLE SHEET (comment can be removed)*/
-
-
-footer {
-    position:absolute;
-    bottom:0;
-}
-
-p {
-    font-size: 1.5rem;
-    color: blue;
-}
-
-a {
-    color: black;
-    font-size: 1.4rem;
-}
-
-a:hover {
-    color: blue;
-}
-
-div.home {
-    text-align: center;
-}
-
-.home h1 {
-    font-size: 5rem;
-}
-
 body, * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-div.fortnite {
-    background-color: rgb(214, 214, 214);
+header nav {
+  background-color: gray;
+  height: 4rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  padding-bottom: 3px;
+}
+header nav ul li {
+  list-style-type: none;
+  position: relative;
+}
+header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem 3rem 0.7rem 3rem;
+  font-size: 1.3rem;
+}
+header nav ul li a:hover {
+  box-shadow: 0 3px #000000;
+}
+header nav ul li ul {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: gray;
+}
+header nav ul li:hover ul {
+  display: flex;
+}
+
+.toggle-button {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 23px;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  header nav ul li a {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    background-color: gray;
+    width: 100%;
     text-align: center;
+  }
+  header nav ul.active {
+    display: flex;
+  }
+  .toggle-button {
+    display: flex;
+  }
 }
 
-.fortnite h1 {
-    color: orange;
-    font-size: 5rem;
-}
-
-.assetto {
-    background-color: black;
-    color: white;
-}
+/*# sourceMappingURL=style.css.map */
