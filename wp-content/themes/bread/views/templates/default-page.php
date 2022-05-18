@@ -6,7 +6,7 @@
 <div class="page--default">
 
     <?php if($title): ?>
-        <h1><?php echo $title; ?></h1>
+        <?php include('./navbar.php'); ?>
     <?php endif; ?>
 
     <?php if($content): ?>

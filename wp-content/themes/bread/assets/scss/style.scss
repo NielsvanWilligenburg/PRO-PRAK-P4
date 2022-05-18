@@ -5,6 +5,7 @@ body, * {
 
 header {
     nav {
+        position: relative;
         background-color: gray;
         height: 4rem;
         display: flex;
@@ -15,8 +16,9 @@ header {
             padding-bottom: 3px;
             li {
                 list-style-type: none;
-                position: relative;
-                a {
+                // position: relative; 
+                a { 
+                    z-index: 1;
                     display: block;
                     text-decoration: none;
                     color: black;
@@ -93,6 +95,7 @@ header {
                 text-align: center;
                 &.active {
                     display: flex;
+                    height: fit-content     ;
                 }
                 li {
                     
