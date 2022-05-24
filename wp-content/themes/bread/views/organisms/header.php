@@ -16,4 +16,6 @@ $menuItems = wp_get_nav_menu_items('Main Menu');
     </ul>
     <?php endif; ?>
 
+    <div></div>
+
 </header>

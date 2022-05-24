@@ -3,7 +3,7 @@ body, * {
   padding: 0;
 }
 
-header nav {
+header {
   position: relative;
   background-color: gray;
   height: 4rem;
@@ -11,14 +11,14 @@ header nav {
   align-items: flex-end;
   justify-content: center;
 }
-header nav ul {
+header ul {
   display: flex;
   padding-bottom: 3px;
 }
-header nav ul li {
+header ul li {
   list-style-type: none;
 }
-header nav ul li a {
+header ul li a {
   z-index: 1;
   display: block;
   text-decoration: none;
@@ -26,16 +26,16 @@ header nav ul li a {
   padding: 1rem 3rem 0.7rem 3rem;
   font-size: 1.3rem;
 }
-header nav ul li a:hover {
+header ul li a:hover {
   box-shadow: 0 3px #000000;
 }
-header nav ul li ul {
+header ul li ul {
   display: none;
   flex-direction: column;
   position: absolute;
   background-color: gray;
 }
-header nav ul li:hover ul {
+header ul li:hover ul {
   display: flex;
 }
 
@@ -58,12 +58,12 @@ header nav ul li:hover ul {
 }
 
 @media only screen and (max-width: 500px) {
-  header nav ul li a {
+  header ul li a {
     padding: 1rem;
   }
 }
 @media only screen and (max-width: 300px) {
-  header nav ul {
+  header ul {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -72,7 +72,7 @@ header nav ul li:hover ul {
     width: 100%;
     text-align: center;
   }
-  header nav ul.active {
+  header ul.active {
     display: flex;
     height: fit-content;
   }
