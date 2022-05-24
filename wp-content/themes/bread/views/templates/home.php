@@ -9,7 +9,6 @@
         <h1><?php echo $title; ?></h1>
     <?php endif; ?>
 
-    <?php include(__DIR__. './navbar.php'); ?>
 
     
      <?php //if($content): ?>
