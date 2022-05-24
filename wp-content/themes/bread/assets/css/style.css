@@ -80,5 +80,23 @@ header ul li:hover ul {
     display: flex;
   }
 }
+.row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+}
+.row div.card {
+  background-color: #b7b7b7;
+  width: 500px;
+  text-align: center;
+}
+.row div.card img {
+  width: 20rem;
+}
+.row div.card .line {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */

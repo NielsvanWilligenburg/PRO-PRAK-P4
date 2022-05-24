@@ -106,3 +106,22 @@ header {
         display: flex;
     }
 }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10rem;
+div.card {
+    background-color: #b7b7b7;
+    width: 500px;
+    text-align: center;
+    img {
+        width: 20rem;
+    }
+    .line {
+        display: flex;
+        justify-content: space-between;
+        margin: .5rem;
+    }
+}
+}
