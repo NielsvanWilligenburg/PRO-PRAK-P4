@@ -1,7 +1,10 @@
 <?php
 /** @var string $title */
 /** @var string $content */
+
+var_dump('hier ben ik');
 ?>
+
 
 <div class="card">
     <?php if($title): ?>

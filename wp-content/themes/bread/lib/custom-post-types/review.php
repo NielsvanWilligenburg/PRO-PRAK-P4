@@ -6,12 +6,12 @@ function reviewPostType()
 {
     $args = [
         'labels' => [
-            'name' => 'Reviews',         // veranders de naam in het menu
-            'singular_name' => '123456789',
+            'name' => 'Reviews',         // veranderd de naam in het menu
+            'singular_name' => 'Reviews',
             'all_items' => 'Reviews',           // alle reviews
             'edit_item' => 'review bewerken',   // review bewerken     
             'add_new' => 'Review aanmaken',     // Add button
-            'add_new_item' => '4 toevoegen',    // review aanmaken
+            'add_new_item' => 'review toevoegen',    // review aanmaken
         ],
         'publicly_queryable' => true,
         'exclude_from_search' => false,
@@ -27,11 +27,11 @@ function reviewPostType()
             'editor',
         ],
         'rewrite' => [
-            'slug' => 'Reviews',
+            'slug' => 'reviews',
         ],
     ];
 
-    \register_post_type('review', $args);
+    \register_post_type('reviews', $args);
 
 }
 
