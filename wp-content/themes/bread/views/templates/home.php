@@ -8,7 +8,7 @@
     <?php if($title): ?>
         <h1><?php echo $title; ?></h1>
     <?php endif; ?>
-
+ 
 
     
      <?php //if($content): ?>

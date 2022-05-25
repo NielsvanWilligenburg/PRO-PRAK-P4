@@ -3,7 +3,7 @@
 /** @var string $content */
 ?>
 
-<div class="post">
+<div class="card">
     <?php if($title): ?>
         <h1><?php echo $title; ?></h1>
     <?php endif; ?>

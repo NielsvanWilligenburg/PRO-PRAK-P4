@@ -28,5 +28,5 @@ function registerTaxonomytrui(): void
     ];
 
 
-    \register_taxonomy('truiCategory', ['trui'], $args);
+    \register_taxonomy('reviewCategory', ['review'], $args);
 }

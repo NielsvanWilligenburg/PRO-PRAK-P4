@@ -107,11 +107,11 @@ header {
     }
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 10rem;
+// .row {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     margin-bottom: 10rem;
 div.card {
     background-color: #b7b7b7;
     width: 500px;
@@ -124,8 +124,11 @@ div.card {
         justify-content: space-between;
         margin: .5rem;
     }
+    // p {
+    //     font-size: 20rem;
+    // }
 }
-}
+// }
 
 @media only screen and (max-width: 1050px) {
     div.row {
