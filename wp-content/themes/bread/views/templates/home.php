@@ -10,11 +10,8 @@
         <p><?php echo $content; ?></p>
     <?php endif; ?>
  
-
-    
      <?php //if($content): ?>
-        <?php //echo $content; ?>
-        <?php //echo do_shortcode('[arandomnumber]'); ?>
+    <?php //echo $content; ?>
     
 
 </div>

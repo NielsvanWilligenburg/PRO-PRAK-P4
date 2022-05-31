@@ -3,9 +3,11 @@ body, * {
     padding: 0;
 }
 
+//Begins navbar
+
 header {
         position: relative;
-        background-color: gray;
+        background-color: rgb(217, 0, 0);
         height: 4rem;
         display: flex;
         align-items: flex-end;
@@ -20,11 +22,13 @@ header {
                     z-index: 1;
                     display: block;
                     text-decoration: none;
-                    color: black;
+                    color: white;
+                    font-style: italic;
+                    font-weight: bolder;
                     padding: 1rem 3rem .7rem 3rem;
-                    font-size: 1.3rem;
+                    font-size: 1.5rem;
                     &:hover {
-                        box-shadow: 0 3px #000000;
+                        box-shadow: 0 3px #ffffff;
                     }
                 }
                 ul {
@@ -107,6 +111,9 @@ header {
     }
 }
 
+//Ends navbar
+
+
 // .row {
 //     display: flex;
 //     flex-direction: row;
@@ -124,11 +131,7 @@ div.card {
         justify-content: space-between;
         margin: .5rem;
     }
-    // p {
-    //     font-size: 20rem;
-    // }
 }
-// }
 
 @media only screen and (max-width: 1050px) {
     div.row {
@@ -153,3 +156,26 @@ div.card {
     }
 
 }
+
+
+//Begin about us
+
+div.aboutus {
+    background-color: rgb(248, 248, 248);
+    border: 3px solid rgb(218, 0, 0);
+    width: 75rem;
+    margin: 5rem auto;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        color: rgb(0, 0, 0);
+        font-size: 1.3rem;
+    }
+}
+
+//Ends about us
