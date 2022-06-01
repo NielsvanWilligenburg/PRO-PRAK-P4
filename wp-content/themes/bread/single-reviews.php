@@ -1,13 +1,14 @@
 <?php
 
-/** @var string $title */
-/** @var string $content */
-
+$post = get_post();
 $title = get_the_title();
 $content = get_the_content();
 $score = get_field('score');
-$image = get_field('image', get_post()->ID);
+$image = get_field('image', $post->ID);
 $url = get_field('url');
+
+$categories = get_the_terms($post, 'reviewCategory');
+
 ?>
 
 
