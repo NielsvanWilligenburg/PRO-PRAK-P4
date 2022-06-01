@@ -10,6 +10,7 @@ $score = get_field('score');
 $image = get_field('image', get_post()->ID);
 $url = get_field('url', $review->ID);
 
+
 $arguments = ['post_type' => 'reviews', 'numberposts' => 4, 'category' => 0, 'orderby' => 'date', 'order' => 'DESC'];
 $listOfRieviews = get_posts($arguments);
 
@@ -28,6 +29,7 @@ render('views/templates/home.php', ['title' => $title, 'content' => $content]);
     <p><?php echo $content ?></p>
     <div class="line">
         <p><?php echo $score ?></p>
-        <p><?php echo $url ?></p>
+        <p><a href="<?php echo get_field('url', $review->ID) ?>">Klik hier voor een website</a></p>
     </div>
     <?php endforeach ?>
+</ul>
