@@ -96,6 +96,14 @@ div.card .line {
   margin: 0.5rem;
 }
 
+div.row {
+  display: flex;
+  gap: 5rem;
+  margin-top: 7.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 1050px) {
   div.row {
     flex-direction: column;
